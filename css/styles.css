@@ -2,6 +2,7 @@
 --main-title-color:rgba(46, 47, 66, 1);/*NAVY BLUE*/
 --main-secondary-color:rgba(67, 68, 85, 1); /*SLATE*/
 --accent-color: rgba(77, 90, 229, 1);/*IRIS*/
+--secondary-accent-color: rgba(64, 75, 191, 1);  /*OCEAN */
 --main-background-color: rgba(255, 255, 255, 1);/*WHITE*/
 --secondary-background-color: rgb(231, 233, 252); /*CORNFLOWER */
 --background-color-team: rgb(244, 244, 253,1); /* CLOUD */
@@ -41,13 +42,15 @@ button {
  .container {
     width: 1158px;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
+    padding-right: auto;
+    padding-left: auto;  
  }
  
 /* =============================HEADER========================= */
 
 .header {
-    
+border-bottom: 1px solid var(--secondary-background-color);
 }
 
 .header-container {
@@ -94,7 +97,7 @@ color: var(--main-title-color);
  .contacts {
     display: flex;
     align-items: center;
-    margin-left: 332px; 
+    margin-left: auto;
  }
 
 .menu.contacts {
@@ -104,6 +107,8 @@ color: var(--main-title-color);
 .header-contacts {
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-left: auto;
+    
 }
 
  .contacts-item {
@@ -213,6 +218,7 @@ color: var(--main-title-color);
 line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 32px;
 }
 
 .works-item:not(:nth-child(3n)) {
@@ -234,14 +240,16 @@ background-color:var(--background-color-team);
     padding-top: 100px;
     padding-bottom: 100px;
 }
-/* .team-item:not(:nth-child(4n)) {
-margin-right: 24px;
-} 
+.team-item  {
+    background-color:var(--main-background-color);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
-.team-item:not(:nth-last-child(-n+4)) {
-margin-bottom: 24px;
-} */
-
+}
 .team-list {
 display: flex;
 flex-wrap: wrap;
@@ -260,42 +268,38 @@ gap: 24px;
 display: flex;
 justify-content: center;
 gap: 24px;
-margin-bottom: 40;
+margin-bottom: 72px;
 }
-
 .main-content {
 padding-top: 96px;
-padding-bottom: 72px;
-}
+padding-bottom: 120px;
+} 
 .application-list {
     display: flex;
     flex-wrap: wrap;
 }
-
 .application-item:not(:nth-child(3n)) {
 margin-right: 24px;
 } 
-
 .application-item:not(:nth-last-child(-n+3)) {
 margin-bottom: 48px;
 } 
 .application-item {
-    border: 1px Solid var(--secondary-background-color) ;
+    border-bottom: 1px Solid var(--secondary-background-color);
+    border-left: 1px Solid var(--secondary-background-color);
+    border-right: 1px Solid var(--secondary-background-color) ;
+    /* border: 1px Solid var(--secondary-background-color) ; */
 }
 
 .secondary-title-application {
     margin-top: 32px;
     margin-bottom: 8px;
-    text-align: center;
+    
 }
 .secondary-title-application + p {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
-}
-
-.main-content-list {
-    padding-bottom: 120px;
+    padding-bottom: 32px;
 }
 
 /* =============================COMPONENTS========================= */
@@ -304,7 +308,7 @@ margin-bottom: 48px;
 .contacts-item:focus,
 .menu-link:hover,
 .menu-link:focus {
-color: var(--accent-color);
+color: var(--secondary-accent-color);
 }
 
 .button-main {
@@ -325,12 +329,12 @@ margin-top: 48px;
 margin-right: auto;
 margin-left: auto;
 display: block;
-
+box-shadow: 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-main:is(:hover, :focus) {
-background-color: var(--main-background-color);
-color: var(--accent-color);
+background-color: var(--secondary-accent-color);
+color: var(--main-background-color);
 
 }
 
@@ -339,21 +343,20 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-color: rgba(64, 75, 191, 1);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+color: var(--accent-color);
 border-radius: 4px;
 cursor: pointer;
 padding-top: 12px;
 padding-right: 24px;
 padding-bottom: 12px;
 padding-left: 24px;
-
-
+border: transparent;
 }
 
 .button-portfolio:is(:hover, :focus) { 
-background-color: rgba(64, 75, 191, 1);   
+background-color: var(--secondary-accent-color);   
 color: var(--main-background-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* =============================FOOTER========================= */
@@ -376,7 +379,7 @@ footer {
     letter-spacing: 0.02em;
     color: var(--main-background-color); 
     width: 264px; 
-    padding-top: 16px;
+    margin-top: 16px;
 
 }
 
