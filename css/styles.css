@@ -118,12 +118,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--main-secondary-color);
 margin-left: auto; 
-
+margin-right: 40px;
  }
-
- /* .email {
-    margin-right: 40px;
- } */
 
 /* =============================HERO========================= */
 
@@ -166,10 +162,6 @@ padding-bottom: 120px;
 background-color: var(--main-background-color);
 }
 
-/* .feature-item {
-    width: 264px;
-    height: 104px;
-} */
 
 .feature-title {
 font-weight: 500;
@@ -177,7 +169,6 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
-/* margin-top: 120px; */
 margin-bottom: 8px;
 }
 
@@ -213,6 +204,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--main-title-color);
+margin-bottom: 8px;
 }
 
 .secondary-title-team + p {
@@ -227,7 +219,6 @@ margin-right: 24px;
 }
 
 .works {
-/* padding-top: 72px; */
 padding-bottom: 120px;
 background-color: var(--main-background-color);
  }   
@@ -286,17 +277,6 @@ margin-right: 24px;
 margin-bottom: 48px;
 } 
 
-.secondary-title-application {
-    margin-top: 32px;
-    margin-bottom: 8px;
-    
-}
-.secondary-title-application + p {
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-bottom: 32px;
-}
-
 /* =============================COMPONENTS========================= */
 
 .contacts-item:hover,
@@ -354,6 +334,7 @@ color: var(--main-background-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card {
+    padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     border-bottom: 1px solid var(--secondary-background-color);
@@ -384,4 +365,8 @@ footer {
     margin-top: 16px;
 
 }
+
+/* .emal {
+    margin-left: 40px;
+} */
 
