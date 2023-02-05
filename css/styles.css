@@ -38,8 +38,8 @@ button {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: auto;
-    padding-left: auto;  
+    padding-right: 15px;
+    padding-left: 15px;  
  }
  body {
      font-family: 'Roboto', sans-serif;
@@ -90,7 +90,6 @@ color: var(--accent-color);
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--main-title-color);
 }
 .menu-item:not(:last-child){
  margin-right: 40px;
@@ -117,16 +116,19 @@ font-style: normal;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--main-secondary-color);
-margin-left: auto; 
+ }
+
+ .email { 
 margin-right: 40px;
  }
+ 
 
 /* =============================HERO========================= */
 
 
 .hero {
 padding-top: 188px;
-padding-bottom: 292px;
+padding-bottom: 188px;
 background-color: var(--main-title-color); 
 }
    
@@ -193,9 +195,8 @@ text-align:center;
 }
 
 .secondary-title-team {
-    margin-top: 32px;
-    margin-bottom: 8px; 
-    text-align: center;
+margin-top: 32px;
+text-align: center;
 }
 
 .secondary-title { 
@@ -207,12 +208,16 @@ color: var(--main-title-color);
 margin-bottom: 8px;
 }
 
-.secondary-title-team + p {
+.secondary-title + p {
 line-height: 1.5;
 letter-spacing: 0.02em;
-text-align: center;
-margin-bottom: 32px;
 }
+
+.secondary-title-team + p {
+text-align: center;
+}
+
+
 
 .works-item:not(:nth-child(3n)) {
 margin-right: 24px;
@@ -240,6 +245,7 @@ background-color:var(--background-color-team);
     0 2px 1px 0 rgba(46, 47, 66, 0.08), 
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
 
 }
 .team-list {
@@ -284,6 +290,9 @@ margin-bottom: 48px;
 .menu-link:hover,
 .menu-link:focus {
 color: var(--secondary-accent-color);
+}
+.menu-link {
+    color: var(--main-title-color);
 }
 
 .button-main {
